@@ -1,0 +1,178 @@
+{% extends 'demo/base.html' %}
+{% load static %}
+
+{% block pagecontent %}
+    <div class="row">
+        <div class="col s12 m6 l6">
+            <div id="basic-form" class="card card card-default scrollspy">
+                <div class="card-content">
+                <h4 class="card-title">Tender Submission</h4>
+                <form>
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" id="fn">
+                        <label for="fn" class="">Type - Tender Details *</label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" id="fn">
+                        <label for="fn" class="">Entry No. *</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="DD/MM/YYYY" id="date-demo2">
+                        <label for="fn" class="">Date *</label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <div class="input-field">
+                        <select class="select2 browser-default">
+                            <option value="square">Department</option>
+                            <option value="rectangle">Civil</option>
+                            <option value="rombo">Supply</option>
+                            <option value="romboid">Purchase</option>
+                            <option value="trapeze">Sales</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" id="work">
+                        <label for="work" class="">Work *</label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Address</label>
+                    </div>
+                    </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="1000000" id="fn">
+                        <label for="fn" class="">Cost Of BOQ *</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="BG" id="date-demo2">
+                        <label for="fn" class="">EMD *</label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="Ex. 6months" id="fn">
+                        <label for="fn" class="">Completion Period *</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input type="text" placeholder="Ex. Delhi" id="date-demo2">
+                        <label for="fn" class="">Location *</label>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <div class="input-field">
+                        <select class="select2 browser-default">
+                            <option value="square">Status</option>
+                            <option value="rectangle">Approved</option>
+                            <option value="rombo">Not Approved</option>
+                        </select>
+                        </div>
+                    </div>
+                    </div>
+                  
+                    </div>
+                </form>
+                </div>
+      </div>
+    </div>
+            <!--
+                Second Columns
+                -->
+        <div class="col s12 m6 l6">
+            <div id="placeholder" class="card card card-default scrollspy">
+                <div class="card-content">
+                <form>
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Ex. 39889" id="text" type="text">
+                        <label for="text" class="active">Bid Number</label>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="d/8899" id="text" type="text">
+                        <label for="text" class="active">Package no.</label>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Ex. Hissar" id="text" type="text">
+                        <label for="text" class="active">District.</label>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Ex. Delhi" id="text" type="text">
+                        <label for="text" class="active">Block</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Ex. 10" id="text" type="text">
+                        <label for="text" class="active">Length</label>
+                    </div>
+                    </div>
+
+                     <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Ex. 100000" id="text" type="text">
+                        <label for="text" class="active">Estimated Cost</label>
+                    </div>
+                    <div class="input-field col s5">
+                        <div class="input-field">
+                        <select class="select2 browser-default">
+                            <option value="square">Less Or Excess</option>
+                            <option value="rectangle">Less</option>
+                            <option value="rombo">Excess</option>
+                        </select>
+                    </div>
+                    </div>
+
+                     <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Ex. 4" id="text" type="text">
+                        <label for="text" class="active">Rate</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Ex. 960000" id="text" type="text">
+                        <label for="text" class="active">Tender Amount</label>
+                    </div>
+                    </div>
+
+                     <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Ex. FM9000" id="text" type="text">
+                        <label for="text" class="active">Guarantee</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="Ex. 1960000" id="text" type="text">
+                        <label for="text" class="active">EMD</label>
+                    </div>
+                    </div>
+                    
+                    
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock pagecontent %}
